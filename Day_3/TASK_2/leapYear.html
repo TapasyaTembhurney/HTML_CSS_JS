@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let year = Number(prompt("Enter year"));
+
+    function leapYear(year){
+        if(year % 4 == 0){
+            return "These year is leap year";
+        }
+        else if(year % 100 == 0){
+            return "These year is leap year";
+        }
+        else if(year % 400 == 0){
+            return "These year is leap year";
+        }
+        else{
+            return "These year is not leap year";
+        }
+    }
+
+    let checkYear = leapYear(year);
+    console.log(checkYear);
+</script>
+</html>

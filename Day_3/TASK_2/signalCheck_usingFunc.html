@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // -----------------Signal Check-----------------
+
+    let signal = prompt("Tell me the signal color");
+
+    function getTrafficSignal(signal){
+        switch(signal){
+            case "Red": return "Stop the vehicle";
+            case "Yellow":
+            case "Amber": return "Get ready to stop the vehicle";
+            case "Green": return "Start your vehicle and Go!!";
+        }   
+    }
+
+    let signalCheck = getTrafficSignal(signal);
+    console.log(signalCheck);
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script>
+// ---------------------Smallest number---------------------------
+
+    function smallest_num(a , b , c){
+        if(a <= b && a <= c){
+            return "a is smaller than b and c and thus smallest";
+        }
+        else if(b <= a && b <= c){
+            return "b is smaller than a and c and thus smallest"
+        }
+        else {
+            return "c is the smallest number";
+        }
+    }
+
+    let num1 = Number(prompt('Enter first number'));
+    let num2 = Number(prompt('Enter second number'));
+    let num3 = Number(prompt('Enter third number'));
+
+    let small_num = smallest_num(num1 , num2 , num3);
+
+    console.log(small_num);
+
+    console.log('\n');
+
+</script>
+</html>

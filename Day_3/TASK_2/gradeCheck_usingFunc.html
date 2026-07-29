@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let Maths = Number(prompt("Enter your maths number"));
+    let Sci = Number(prompt("Enter your science number"));
+    let Eng = Number(prompt("Enter your english number"));
+    let Hin = Number(prompt("Enter your hindi number"));
+    let Phy = Number(prompt("Enter your physics number"));
+
+    let total = (Maths + Sci + Eng + Hin + Phy);
+    let percentage = (total / 500) * 100;
+    
+    function stud_grade(percentage){
+        if(percentage >= 90){
+            console.log(percentage);
+            return "A Grade";
+        }
+        else if(percentage >= 80 && percentage < 90){
+            console.log(percentage);
+            return "B Grade";
+        }
+        else if(percentage >= 70 && percentage < 80){
+            console.log(percentage);
+            return "C Grade";
+        }
+        else if(percentage >= 60 && percentage < 70){
+            console.log(percentage);
+            return "D Grade";
+        }
+        else{
+            console.log(percentage);
+            return "Improve your grade";
+        }
+    }
+
+    let Grade = stud_grade(percentage);
+    console.log(Grade);
+    
+</script>
+</html>

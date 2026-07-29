@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+
+<script>
+    // --------------------Smallest Number----------------------------------------
+
+    let a = 10;
+    let b = 20;
+
+    let small_num = (a < b) ? "a is the smaller than b" : "a is not the smaller than b";
+    
+    console.log("The smallest number is: ",small_num);
+    
+    console.log('\n');
+
+    // --------------------Largest Number----------------------------------
+
+    let larg_num = (a > b) ? "b is not smaller than a" : "b is greater than a";
+    console.log("The largest number is: ",larg_num);
+
+    console.log('\n');
+
+    // ----------------------Grade-----------------------------------------
+
+    let Mathematics = 96;
+    let Science = 90;
+    let English = 93;
+    let Hindi = 88;
+    let Physics = 89;
+
+    let total = (Mathematics + Science + English + Hindi + Physics);
+    // console.log(total);
+    let per = (total / 500) * 100;
+    console.log("The percentage of the student is : ",per);
+
+    let grade = (per >= 90) ? "A-Grade" : (per >= 80 && per < 90) ? "B-Grade" : (per >= 70 && per < 80) ? "C-Grade": (per >= 60  && per < 70) ? "D-Grade" : "Low grade";
+    
+    console.log("The grade of the studnet is :",grade);
+
+    console.log('\n');
+
+    // ---------------------------Signal Check----------------------------------
+
+    let signal_light = "Green";
+    
+    let traffic_sig = (signal_light == "Red") ? "Stop your vehicle and turn off the engine!" : (signal_light == "Yellow" || signal_light == "Amber") ? "Prepare to stop as red signal is about to turn on..." : (signal_light == "Green") ? "All vehicle can start and Go" : "Not a valid traffic/control signal";
+
+    console.log(traffic_sig);
+
+    console.log("\n");
+
+    // --------------------------Authentication Check----------------------------
+
+    let username = "Tapasya";
+    let password = "818^9bh0";
+
+
+    let authentication = (username == "Tapasya" && password == "818^9bh0") ? "The user is authenticated!" : "The user is not authenticated!";
+
+    console.log(authentication);
+
+</script>
+</html>

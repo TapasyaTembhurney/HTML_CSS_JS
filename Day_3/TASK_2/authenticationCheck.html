@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    let username = prompt("Enter your username");
+    let password = prompt('Enter you password');
+
+    function user(username , password){
+
+        let username1 = 'Tapasya';
+        let password1 = '8278HUg&';
+
+        if(username == username1 && password == password1){
+            return "The user is authenticated!!";
+        }
+        else{
+            return "The user is not authenticated!";
+        }
+    }
+
+    let authentication = user(username, password);
+    console.log(authentication);
+</script>
+</html>
