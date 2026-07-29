@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grade.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div id="form">
+            <h2 style="font-weight:900;" id="head">Marks</h2>
+            <form action="">
+                <input type="text" name="" id="maths" placeholder="Enter Maths Marks">
+                <input type="text" name="" id="sci" placeholder="Enter Science Marks">
+                <input type="text" name="" id="eng" placeholder="Enter English Marks">
+            </form>
+
+            <button id="btn" type="button" onclick="Grade()">Submit</button>
+        </div>
+        <div id="card">
+
+            <h2 style="text-transform: uppercase;color:white;">Result</h2>
+            <table border="3" id="tab">
+                <tr>
+                    <th>Maths</th>
+                    <th>Science</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td id="marksMaths">90</td>
+                    <td id="marksSci">90</td>
+                    <td id="marksEng">90</td>
+                </tr>
+            </table>
+
+            <p>Percentage: <span id="percentage"></span>%</p>
+            <p>Grade : <span id="grade"></span></p>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    function Grade() {
+        let maths = Number(document.getElementById('maths').value)
+        let sci = Number(document.getElementById('sci').value)
+        let eng = Number(document.getElementById('eng').value)
+
+        let total = maths + sci + eng;
+        let per = (total / 300) * 100;
+        
+        let grade = "";
+        if(per >= 90){
+            grade = "A";
+        }
+        else if(per >=80){
+            grade = "B";
+        }
+        else if(per >= 70){
+            grade = "C";
+        }
+        else if(per >= 60){
+            grade = "Improve your Grade"
+        }
+
+        else{
+            grade = "Do better next time"
+        }
+
+        document.getElementById('marksMaths').innerHTML = maths;
+        document.getElementById('marksSci').innerHTML = sci;
+        document.getElementById('marksEng').innerHTML = eng;
+
+        document.getElementById('percentage').innerHTML = per.toFixed(2)
+        document.getElementById('grade').innerHTML = grade
+    }   
+</script>
+
+</html>

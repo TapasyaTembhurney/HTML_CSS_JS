@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <div class="form">
+        <form action="">
+            <input type="text" id="name">Username
+            <input type="number" id="age">Age
+
+            <button type="button" onclick="checkVoting()">Register</button>
+        </form>
+        
+        <br><br>
+
+        <table border="2">
+            <tr>
+                <th>Username</th>
+                <th>Age</th>
+            </tr>
+            
+            <tr>
+                <td id="res_name">Tapasya</td>
+                <td id="res_age">21</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<script>
+    function checkVoting(){
+        let name = document.getElementById('name').value;
+        let age = document.getElementById('age').value;
+
+        document.getElementById('res_name').innerHTML = name
+        document.getElementById('res_age').innerHTML = age
+
+        // let result = (age > 18) ? "You can vote":"You can't vote";
+        // console.log(name + " " + result);
+    }
+</script>
+</html>
