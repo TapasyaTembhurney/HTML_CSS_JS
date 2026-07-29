@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onmouseover="handleMouseOver(event)">Click Me!</button>
+    <p id="mouse">Hello world</p>
+</body>
+
+<script>
+    function handleMouseOver(event){
+        document.getElementById('mouse').innerHTML = event.target.textContent;
+    }
+</script>
+</html>

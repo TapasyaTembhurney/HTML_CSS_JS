@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" onkeyup="handleOnKeyUp(event)">
+    <p id="main">Hello World</p>
+</body>
+
+<script>
+    function handleOnKeyUp(event){
+        document.getElementById('main').innerHTML = event.target.value;
+    }
+</script>
+</html>
