@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <h2 id="head">Hello JS</h2>
+        <img src="./images/lit-light-bulb.avif" alt="" id="bulb">
+    </div>
+
+    <script>
+        document.getElementById('head').innerHTML = 'Javascript language';
+        document.getElementById('bulb').src = './images/lit-light-bulb.avif';
+        document.getElementById('bulb').style = 'height:250px';
+        // document.getElementById('main').src = './video/Scene.mp4'
+        document.getElementById('main').style = 'color:red;border:2px solid blue;border-radius:20%;text-align:center'
+    </script>
+</body>
+</html>
