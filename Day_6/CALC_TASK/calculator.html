@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/15.1.0/math.js" integrity="sha512-3y6BeMscN23skftXPwx0f5RI6brbJlEfaZ3KInpeIkKjFunP4toeg9XyEsSo4zq+7ZqvHJvD9S2WFIk0yT5mzw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<body>
+    
+    <table border="3">
+        <tr>
+            <td colspan="3"><input type="button" id="result" ></td>
+            <td><input type="button" value="CE" id="clear" onclick="handleClear('CE')"></td>
+            <td></td>
+        </tr>
+
+        <!-- <tr>
+            <td><input type="button" value="%" onclick="handleDisplay('%')"></td>
+            <td><input type="button" value="√" onclick="handleDisplay('√')"></td>
+            <td><input type="button" value="x²" id="sqrt" onclick="handleDisplay('x²')"></td>
+            <td><input type="button" value="1/x" id="sqrt" onclick="handleDisplay('1/x')"></td>
+        </tr> -->
+
+        <!-- <tr>
+            <td><input type="button" value="CE" id="clear" onclick="handleClear('CE')"></td>
+            <td><input type="button" value="C" id="clear" onclick="handleClear('C')"></td>
+            <td><input type="button" value="del"  id="clear"onclick="handleClear('')"></td>
+            <td><input type="button" value="/" onclick="handleDisplay('÷')"></td>
+        </tr> -->
+
+        <tr>
+            <td><input type="button" value="7" onclick="handleDisplay('7')"></td>
+            <td><input type="button" value="8" onclick="handleDisplay('8')"></td>
+            <td><input type="button" value="9" onclick="handleDisplay('9')"></td>
+            <td><input type="button" value="*" onclick="handleDisplay('*')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="4" onclick="handleDisplay('4')"></td>
+            <td><input type="button" value="5" onclick="handleDisplay('5')"></td>
+            <td><input type="button" value="6" onclick="handleDisplay('6')"></td>
+            <td><input type="button" value="-" onclick="handleDisplay('-')"></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" value="1" onclick="handleDisplay('1')"></td>
+            <td><input type="button" value="2" onclick="handleDisplay('2')"></td>
+            <td><input type="button" value="3" onclick="handleDisplay('3')"></td>
+            <td><input type="button" value="+" onclick="handleDisplay('+')"></td> 
+        </tr>
+
+        <tr>
+            <td><input type="button" value="/" onclick="handleDisplay('/')"></td>
+            <td><input type="button" value="0" onclick="handleDisplay('0')"></td>
+            <td><input type="button" value="." onclick="handleDisplay('.')"></td>
+            <td><input type="button" value="=" id="equal" onclick="handleSolve()"></td>
+        </tr>
+    </table>
+
+</body>
+    
+    <script>
+        function handleDisplay(val){
+            document.getElementById('result').value += val;
+        }
+
+        function handleClear(clrVal){
+            document.getElementById('result').value = " ";
+            confirm("Are you sure you want to delete it?");
+        }
+
+        function handleSolve(){
+            let x = document.getElementById('result').value;
+            let res = math.evaluate(x);
+            let newres=res.toFixed(3)
+            document.getElementById('result').value = newres; 
+            alert("You solved one operation!");
+        }
+
+    </script>
+
+</html>

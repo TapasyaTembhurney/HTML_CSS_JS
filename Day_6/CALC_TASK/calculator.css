@@ -1,0 +1,48 @@
+table{
+    border: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    padding: 20px; */
+    margin-left:33%;
+    margin-top: 5%;
+    height: 400px;
+    width: 400px;
+}
+
+td{
+    border: none;
+}
+
+#result{
+    background-color: #FBF5DD;
+    color: black;
+}
+
+#sqrt{
+    background-color: white;
+    color: black;
+}
+
+input{
+    background-color: #1B4EF5;
+    /* background-color:darkviolet; */
+    font-size: 20px;
+    border-radius: 8px;
+    color: white;
+    height: 100%;
+    width: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#clear{
+    background-color: #D90000;
+}
+
+#equal{
+    background-color: #48A111;
+}
