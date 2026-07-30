@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice2.css">
+</head>
+
+<body>
+    <div id="card">
+        <img src="" alt="" id="img">
+        <div id="details">
+            <div id="bool"></div>
+            <h2 id="name"></h2>
+            <h3 id="age"></h3>
+
+            <div id="skill">
+                <ul>
+                    <li id="skills1"></li>
+                    <li id="skills2"></li>
+                    <li id="skills3"></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    const data = {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNB6RzSoO-v3FpjYcmtjbPDsddspxLmh9ANPEHTr7R3A&s=10",
+        "id": 101,
+        "name": "Alice Johnson",
+        "age": 28,
+        "email": "alice@example.com",
+        "isActive": true,
+        "skills": [
+            "JavaScript",
+            "Python",
+            "SQL"
+        ],
+        "address": {
+            "street": "123 Main Street",
+            "city": "New York",
+            "country": "USA"
+        }
+    }
+
+    document.getElementById('img').src = data.image;
+    document.getElementById('name').innerHTML = data.name;
+    document.getElementById('age').innerHTML = data.age;
+
+    // document.getElementById('bool').innerHTML = data.isActive;
+    document.getElementById('skills1').innerHTML = data.skills[0];
+    document.getElementById('skills2').innerHTML = data.skills[1];
+    document.getElementById('skills3').innerHTML = data.skills[2];
+</script>
+
+</html>

@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    border-color: 2px solid;
+    border-radius: 15px;
+    height:330px;
+    width: 300px;
+    background-color: blue;
+    color: yellow;
+    margin: 10%;
+    box-shadow: 7px 10px 2px black;
+}
+h2{
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#details{
+    /* border: 2px solid; */
+    height: 170px;
+    width: 100%;
+    margin-top: 10%;
+}
+
+#age{
+    text-align: center;
+}
+
+#skill{
+    text-align: center;
+}
+
+#img{
+    /* border: 2px solid; */
+    height: 100px;
+    width: 100%;
+}

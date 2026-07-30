@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="border: 2px solid red;width: 200px;border-radius: 10px;">
+        <img src="" alt="" id="profile" style="height: 50%;width: 100%;">
+        <h2 id="name"></h2>
+        <p id="age"></p>
+        <p id="email"></p>
+        <ul>
+            <li id="skills1"></li>
+            <li id="skills2"></li>
+            <li id="skills3"></li>
+        </ul>
+    </div>
+</body>
+<script>
+    const data = {
+        "image":"https://images7.alphacoders.com/411/thumb-1920-411820.jpg",
+        "id": 101,
+        "name": "Alice Johnson",
+        "age": 28,
+        "email": "alice@example.com",
+        "isActive": true,
+        "skills": [
+            "JavaScript",
+            "Python",
+            "SQL"
+        ],
+        "address": {
+            "street": "123 Main Street",
+            "city": "New York",
+            "country": "USA"
+        }
+    }
+    document.getElementById('profile').src = data.image
+    document.getElementById('name').innerHTML = data.name
+    document.getElementById('age').innerHTML = data.age
+    document.getElementById('email').innerHTML = data.email
+    document.getElementById('skills1').innerHTML = data.skills[0]
+    document.getElementById('skills2').innerHTML = data.skills[1]
+    document.getElementById('skills3').innerHTML = data.skills[2]
+</script>
+
+</html>
