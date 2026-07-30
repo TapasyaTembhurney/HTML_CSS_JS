@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Task2.css">
+</head>
+
+<body>
+    <div id="calci">
+        <table id="calci_box">
+            <tr>
+                <td><input type="number" id="inp-1"></td>
+                <td>
+                    <select name="" id="op">
+                        <option value="+" id="plus">+</option>
+                        <option value="-" id="minus">-</option>
+                        <option value="*" id="mul">*</option>
+                        <option value="/" id="div">/</option>
+                    </select>
+                </td>
+                <td><input type="text" id="inp-2"></td>
+            </tr>
+        </table>
+        <br>
+
+        <div id="result">
+            <button id="eq" onclick="handleSolve()">=</button>
+        </div>
+
+        <button id="card_res"></button>
+    </div>
+
+</body>
+    
+<script>
+    function handleSolve(){
+        let a = document.getElementById('inp-1').value;
+        let b = document.getElementById('op').value
+        let c = document.getElementById('inp-2').value;
+
+        let res = eval(`${a}${b}${c}`);
+        alert("The equation is solved");
+        document.getElementById('card_res').textContent = res;
+        
+    }
+
+</script>
+</html>

@@ -1,0 +1,82 @@
+body{
+    background:linear-gradient(to right , #F62477,#e6bebe, #F62477);
+    text-align: center;
+}
+
+#calci{
+    border: 2px solid;
+    width: 400px;
+    margin-top: 13%;
+    margin-left: 30%;
+    background-color: #FF4081;
+}
+#calci:hover{
+    height: 410px;
+    width: 410px;
+}
+
+#calci_box{
+    /* border: 2px solid; */
+    margin-top: 3%;
+}
+
+#inp-1{
+    height: 30px;
+    border: none;
+    /*margin-top: 5%;
+    *//*margin-bottom: 5%;
+    */border-radius: 2px;
+}
+#inp-1:focus{
+    outline: none;
+}
+
+#inp-2{
+    border: none;
+    height: 30px;
+    /* margin-bottom: 5%; */
+    border-radius: 2px;
+}
+#inp-2:focus{
+    outline: none;
+}
+
+#op{
+    width: 40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#result{
+    /* border: 2px solid; */
+    height: 40px;
+    width: 45%;
+    margin-bottom: 20px;
+    margin-left: 27%;
+}
+
+#eq{
+    border: none;
+    border-radius: 10%;
+    /* margin-top: 10%; */
+    height: 50%;
+    width: 60%;
+    background-color: rgb(2, 246, 2);
+}
+
+#card_res{
+    border: none;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    /* margin-top: 3px; */
+    /* margin-left: 10%; */
+    font-size: 20px;
+    color: white;
+    background-color: #F62477;
+    box-shadow:2px 3px 20px white;
+}
+
