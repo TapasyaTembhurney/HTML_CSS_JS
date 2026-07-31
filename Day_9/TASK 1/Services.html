@@ -10,7 +10,7 @@
 
 <body>
     <div id="services">
-
+        <!-- <img src="" alt="" id="images"> -->
     </div>
 </body>
 
@@ -18,21 +18,21 @@
     let Services = [
         {
             id : "1",
-            image: " ",
+            image: "./images/cms.png",
             title: "Software Development & Maintenance",
             description: "Keep your software updated , secure , optimized"
         },
 
         {
             id : "2",
-            image: " ",
+            image: "./images/web.png",
             title: "Web Development",
             description: "Stable, secure & high-performance web applications."
         },
 
         {
             id : "3",
-            image: " ",
+            image: "./images/booking.png",
             title: "App Development",
             description: "Cross-platform mobile apps with modern UX."
         },
@@ -76,7 +76,7 @@
 
     document.getElementById('services').innerHTML = Services.map(i => (
         `<div id="cards">
-            <h2>${i.id}</h2>
+            <img src = "${i.image}" alt = "" id='images'></img>
             <h3 id = "head">${i.title}</h3>
             <p>${i.description}</p>
         </div> `
