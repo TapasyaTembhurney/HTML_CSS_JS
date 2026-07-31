@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+    <div id="services">
+
+    </div>
+</body>
+
+<script>
+    let Services = [
+        {
+            id : "1",
+            image: " ",
+            title: "Software Development & Maintenance",
+            description: "Keep your software updated , secure , optimized with our expert support."
+        },
+
+        {
+            id : "2",
+            image: " ",
+            title: "Web Development",
+            description: "Stable, secure & high-performance web applications."
+        },
+
+        {
+            id : "3",
+            image: " ",
+            title: "App Development",
+            description: "Cross-platform mobile apps with modern UX."
+        },
+
+        // {
+        //     id : "4",
+        //     image: " ",
+        //     title: "AI Solutions",
+        //     description: "Intelligent systems powered by AI & ML."
+        // },
+
+        // {
+        //     id : "5",
+        //     image: " ",
+        //     title: "Digital Marketing",
+        //     description: "SEO, branding & growth-driven campaigns."
+        // },
+
+        // {
+        //     id : "6",
+        //     image: " ",
+        //     title: "API Integration",
+        //     description: "Secure and Seamless system integrations."
+        // },
+
+        // {
+        //     id : "7",
+        //     image: " ",
+        //     title: "Training & Internship",
+        //     description: "Learn modern technologies with real-time projects to kickstart your IT career ."
+        // },
+
+        // {
+        //     id : "8",
+        //     image: " ",
+        //     title: "Cloud & DevOps",
+        //     description: "Reliable cloud infrastructure with CRUD automation."
+        // },
+    ]     
+
+
+    document.getElementById('services').innerHTML = Services.map(i => (
+        `<div id="cards">
+            <h2>${i.id}</h2>
+            <h3>${i.title}</h3>
+            <p>${i.description}</p>
+        </div> `
+    )).join("");
+</script>
+
+</html>
