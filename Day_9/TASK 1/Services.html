@@ -20,7 +20,7 @@
             id : "1",
             image: " ",
             title: "Software Development & Maintenance",
-            description: "Keep your software updated , secure , optimized with our expert support."
+            description: "Keep your software updated , secure , optimized"
         },
 
         {
@@ -77,7 +77,7 @@
     document.getElementById('services').innerHTML = Services.map(i => (
         `<div id="cards">
             <h2>${i.id}</h2>
-            <h3>${i.title}</h3>
+            <h3 id = "head">${i.title}</h3>
             <p>${i.description}</p>
         </div> `
     )).join("");
