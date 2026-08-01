@@ -12,7 +12,13 @@
     <div id="projects">
         <img src="../images/Screenshot (2602).png" alt="">
         <h2 id="head"></h2>
-        <p id="prg"></p>
+        <p id="prg">
+            <ul style="background-image: url('../images/checklist.png');">
+                <li class="points"></li>
+                <li class="points"></li>
+                <li class="points"></li>
+            </ul>
+        </p>
         <a href="" target="_blank" rel="noopener noreferrer">
             <img src="../images/link.png" class="link" alt="Visit Project">
         </a>
@@ -72,11 +78,13 @@
         <div id = 'projects_det'>
             <img src = "${i.image}" id= "images">
             <h2 id='pName'>${i.prjName}</h2>
-            <p class= "para">${i.Features[0].feat1}</p>
-            <p class= "para">${i.Features[0].feat2}</p>
-            <p class= "para">${i.Features[0].feat3}</p>
+            <ul>
+                <li class = "points">${i.Features[0].feat1}</li>    
+                <li class = "points">${i.Features[0].feat2}</li>    
+                <li class = "points">${i.Features[0].feat3}</li>    
+            </ul>
             <a href="${i.link}" target="_blank" rel="noopener noreferrer">
-                <img src="${i.iconImg}" class="link" alt="Visit Project">
+                <img src="${i.iconImg}" class="link" alt="Visit Project" id= "iconimages">
             </a> 
         </div>
         `
