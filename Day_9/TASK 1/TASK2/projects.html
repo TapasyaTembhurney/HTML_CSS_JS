@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+    <div id="projects">
+        <img src="../images/Screenshot (2602).png" alt="">
+        <h2 id="head"></h2>
+        <p id="prg"></p>
+        <a href="" target="_blank" rel="noopener noreferrer">
+            <img src="../images/link.png" class="link" alt="Visit Project">
+        </a>
+    </div>
+</body>
+
+<script>
+    let Projects = [
+        {
+            id: 1,
+            image: "../images/Screenshot (2602).png",
+            prjName: "KP & Grandsons ERP",
+            Features: [
+                {
+                    feat1: "Integrated Account Management",
+                    feat2: "Role-Based Access Control",
+                    feat3: "Sales & Purchase Management"
+                }
+            ],
+            iconImg: "../images/link.png",
+            link: "https://erp.kpgrandsons.in/"
+        },
+
+        {
+            id: 2,
+            image: "../images/Screenshot (2604).png",
+            prjName: "SR Enterprises(Transport Software)",
+            Features: [
+                {
+                    feat1: "Complete Trip Record Management",
+                    feat2: "Duplicate Freight Detection",
+                    feat3: "Load & Consignment Management"
+                }
+            ],
+            iconImg: "../images/link.png",
+            link: "https://www.transporterp.in/?gad_source=1&gad_campaignid=10094571119&gclid=CjwKCAjwj7HTBhBiEiwA8s35Oqi83jzdNECxPB9V21WqLb4e9HAm9He8ojTjDidS8JPe3SJj2rP3ORoCKJcQAvD_BwE"
+        },
+
+        {
+            id: 3,
+            image: "../images/Screenshot (2603).png",
+            prjName: "DDC Consultancy",
+            Features: [
+                {
+                    feat1: "Employee Management with Attendance and Payroll",
+                    feat2: "Task and Performance Tracking",
+                    feat3: "Document and Management"
+                }
+            ],
+            iconImg: "../images/link.png",
+            link: "https://ddcconsultancy.in/"
+        },
+    ]
+
+    document.getElementById('projects').innerHTML = Projects.map(i => (
+        `
+        <div id = 'projects_det'>
+            <img src = "${i.image}" id= "images">
+            <h2 id='pName'>${i.prjName}</h2>
+            <p class= "para">${i.Features[0].feat1}</p>
+            <p class= "para">${i.Features[0].feat2}</p>
+            <p class= "para">${i.Features[0].feat3}</p>
+            <a href="${i.link}" target="_blank" rel="noopener noreferrer">
+                <img src="${i.iconImg}" class="link" alt="Visit Project">
+            </a> 
+        </div>
+        `
+    )).join(" ");   
+</script>
+
+</html>
