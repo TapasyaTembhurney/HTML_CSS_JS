@@ -1,0 +1,105 @@
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    margin: 0.5px;
+    overflow-x: hidden;
+}
+
+#hero{
+    /* border: 2px solid; */
+    height: 100vh;
+    width: 99.87%;
+    color: #f1f5f9;
+    background: radial-gradient(circle at center,rgb(0, 0, 144) 20%, black 80%);
+}
+
+
+#navbar{
+    border-bottom: 0.1px solid silver;
+    height: 70px;
+    display: flex;
+    gap: 75%;
+}
+
+#socials{
+    display: flex;
+    gap: 20px;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+    margin-left: 1%;
+}
+
+#social-icon{
+    height: 20px;
+    margin-top: 25px;
+}
+
+#name{
+    margin-top: 7%;
+    font-size: 50px;
+    border-right: 3px solid ;
+    color: #22d3ee;
+    width: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20, end) infinite,       
+    blink 1s step-end infinite;
+}
+
+@keyframes typing{
+    from { width:0; }
+    to{ width:100%; }
+}
+
+@keyframes blink{
+    50% { border-color: transparent; }
+}
+
+#designation{
+    margin-top: -30px;
+    font-size: 20px;
+}
+
+#desc{
+    margin-top: 10%;
+    font-size: 14px;
+    /* border-right-style: double;
+    border-top-style: double; */
+}
+#hero_content{
+    display: flex;
+    gap:5px;
+}
+
+#f-image{
+    border-radius: 200px;
+    border-style: double;
+    margin-top: 10%;
+    height: 350px;
+    width:350px;
+}
+
+#hr-line{
+    color: silver;
+    margin-top: 2%;
+}
+
+#about{
+    /* border: 2px solid; */
+    background:linear-gradient(to bottom ,black,rgb(0, 0, 144));
+    color:#22d3ee;
+    height: 100vh;
+    margin-top: -18px;
+}
+
+#abt-head{
+    text-align: center;
+}
+
+#about-desc{
+    /* border: 2px solid; */
+    height: 200px;
+    width: 300px;
+}
